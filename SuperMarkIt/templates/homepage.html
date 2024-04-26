@@ -1,0 +1,22 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block content %}
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'homepage-styles.css' %}">
+  </head>
+  <body>
+    <section class="hero">
+      <div class="site-description">
+        <h3>Agriculture shopping with APREMS!</h3>
+        <br>
+        <a href="{% url 'about' %}" class="about">Know More!</a>
+      </div>
+    </section>
+    <span class="created-by"><p>KLU-Team21
+    </p></span>
+  </body>
+{% endblock %}
